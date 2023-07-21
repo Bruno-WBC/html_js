@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background-image: url(./pexels-pixabay-434337.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+.overlay{
+    background-color: black;
+    border-radius: 25px;
+    padding: 50px;
+    margin: auto;
+    opacity: 0.8;
+}
+
+.container{
+    margin: auto;
+    color: white;
+}
+
+.container h2, .container button{
+    margin: 10px;
+}
+
+.activity{
+    margin: 10px;
+}
+
+.EX{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.EX input{
+    border-radius: 10px;
+    margin: 0 7px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.activity button{
+    margin-top: 15px;
+    width: 450px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: rgb(8, 126, 90);
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.messagem-sucesso1{
+    background-color: rgb(8, 126, 90);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 7px;
+    display: none;
+}
+
+.messagem-erro1{
+    background-color: rgb(170, 5, 5);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 7px;
+    display: none;
+}
+
+.messagem-sucesso2{
+    background-color: rgb(8, 126, 90);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 7px;
+    display: none;
+}
+
+.messagem-erro2{
+    background-color: rgb(170, 5, 5);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 7px;
+    display: none;
+}
