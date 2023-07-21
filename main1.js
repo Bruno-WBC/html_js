@@ -7,17 +7,17 @@ const quartoNumero = document.getElementById('quarto-numero');
 
 function resultadoMaior(primeiroNumero,segundoNumero){
     if (primeiroNumero > segundoNumero){
-        return resultadoMaior = true
-    } else {
         return resultadoMaior = false
+    } else {
+        return resultadoMaior = true
     }
 }
 
 function resultadoMenor(terceiroNumero,quartoNumero){
     if (terceiroNumero < quartoNumero){
-        return resultadoMenor = true
-    } else {
         return resultadoMenor = false
+    } else {
+        return resultadoMenor = true
     }
 }
 
@@ -31,7 +31,7 @@ form.addEventListener('submit', function(e){
     const messagemErro2 = `Não foi dessa vez! <b>${terceiroNumero.value}</b> não é menor que <b>${quartoNumero.value}</b>`;
 
 
-    if (resultadoMaior.true && resultadoMenor.true) {
+    if (resultadoMaior && resultadoMenor) {
         const containerMenssagemSucesso1 = document.querySelector('.messagem-sucesso1');
         const containerMenssagemSucesso2 = document.querySelector('.messagem-sucesso2');
 
@@ -41,7 +41,7 @@ form.addEventListener('submit', function(e){
         containerMenssagemSucesso2.innerHTML = messagemSucesso2;
         containerMenssagemSucesso2.style.display = 'block';
 
-    } else if (resultadoMaior.true && resultadoMenor.false){
+    } else if (resultadoMaior.true != resultadoMenor.false){
         const containerMenssagemSucesso1 = document.querySelector('.messagem-sucesso1');
         const containerMenssagemErro2 = document.querySelector('.messagem-erro2');
         
