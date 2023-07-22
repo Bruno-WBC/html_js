@@ -33,6 +33,9 @@ body{
 }
 
 .activity{
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
 }
 
@@ -49,12 +52,24 @@ body{
     font-weight: bold;
 }
 
-.activity button{
+.corrigir{
     margin-top: 15px;
-    width: 450px;
+    width: 250px;
     height: 40px;
     border-radius: 25px;
     background-color: rgb(8, 126, 90);
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.zera{
+    display: inline;
+    margin-top: 15px;
+    width: 250px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: rgb(8, 69, 126);
     color: white;
     font-weight: bold;
     font-size: medium;
