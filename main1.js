@@ -20,42 +20,24 @@ form.addEventListener('submit', function(e){
     const containerMenssagemErro1 = document.querySelector('.messagem-erro1');
     const containerMenssagemErro2 = document.querySelector('.messagem-erro2');
 
-    if (primeiroNumero.value > segundoNumero.value, terceiroNumero.value < quartoNumero.value){
-
+    if (primeiroNumero.value > segundoNumero.value){
         containerMenssagemSucesso1.innerHTML = messagemSucesso1;
         containerMenssagemSucesso1.style.display = 'block';
-
-        containerMenssagemSucesso2.innerHTML = messagemSucesso2;
-        containerMenssagemSucesso2.style.display = 'block';
-        console.log(messagemSucesso1,messagemSucesso2)
-
-    } else if (primeiroNumero.value > segundoNumero.value, terceiroNumero.value > quartoNumero.value){
-
-        containerMenssagemSucesso1.innerHTML = messagemSucesso1;
-        containerMenssagemSucesso1.style.display = 'block';
-
-        containerMenssagemErro2.innerHTML = messagemErro2;
-        containerMenssagemErro2.style.display = 'block';
-        console.log(messagemSucesso1, messagemErro2)
-
-    } else if (primeiroNumero.value < segundoNumero.value, terceiroNumero.value < quartoNumero.value){
-
-        containerMenssagemErro1.innerHTML = messagemErro1;
-        containerMenssagemErro1.style.display = 'block';
-
-        containerMenssagemSucesso2.innerHTML = messagemSucesso2;
-        containerMenssagemSucesso2.style.display = 'block';
-        console.log(messagemErro1, messagemSucesso2)
-
     } else{
-
         containerMenssagemErro1.innerHTML = messagemErro1;
         containerMenssagemErro1.style.display = 'block';
+    }
 
+    if (terceiroNumero.value < quartoNumero.value){
+        containerMenssagemSucesso2.innerHTML = messagemSucesso2;
+        containerMenssagemSucesso2.style.display = 'block';
+    } else{
         containerMenssagemErro2.innerHTML = messagemErro2;
         containerMenssagemErro2.style.display = 'block';
-        console.log(messagemErro1,messagemErro2)
     }
 })
 
+function recarregarAPagina(){
+    window.location.reload();
+} 
 console.log(form);
